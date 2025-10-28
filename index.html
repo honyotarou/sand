@@ -1,107 +1,377 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>館林市｜こいのぼり＆うどん ガイド</title>
-<meta name="description" content="群馬県館林市の名物イベント『こいのぼりの里まつり』と、地元のうどん文化を写真・地図・FAQつきでわかりやすく紹介。旅行計画や学習用にも使える、軽量・高速・アクセシブルなワンファイルサイト。"/>
-<meta name="author" content=""/>
-<meta name="theme-color" content="#0ea5e9"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="館林市｜こいのぼり＆うどん ガイド"/>
-<meta property="og:description" content="館林市のこいのぼりとうどんを1ページで紹介。イベント情報・見どころ・食べ方・アクセス。"/>
-<meta property="og:image" content="https://example.com/og-image.jpg"/>
-<meta property="og:url" content="https://<your-username>.github.io/<repo-name>/"/>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%230ea5e9' d='M10 50c20-20 60-20 80 0-20 20-60 20-80 0z'/%3E%3Ccircle cx='30' cy='50' r='5' fill='%23000'/%3E%3C/svg%3E"/>
-<style>
-:root{
---bg: #0b1020;/*暗背景*/
---panel: #0f172a;/*カード*/
---text: #e5f2ff;/*本文*/
---muted: #9fb6cc;/*注釈*/
---brand: #0ea5e9;/*アクセント*/
---brand-2:#38bdf8;/*グラデーション*/
---ok: #10b981; --warn:#f59e0b; --bad:#ef4444;
---shadow: 0 10px 30px rgba(2,8,23,.3);
---radius: 18px;
---maxw: 1100px;
-}
-@media (prefers-color-scheme: light){
-:root{ --bg:#f8fbff; --panel:#ffffff; --text:#0b1020; --muted:#476079; }
-body{ background-image: radial-gradient(1200px 600px at 10% -10%, #dbf0ff 0, transparent 60%), radial-gradient(900px 500px at 90% -20%, #e8f7ff 0, transparent 50%);}
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", "Meiryo", sans-serif;
-color:var(--text); background:var(--bg);
-line-height:1.7; letter-spacing:.02em;
-}
-a{color:var(--brand)}
-.wrap{ max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>館林市｜こいのぼり＆うどん ガイド</title>
+  <meta name="description" content="群馬県館林市の名物イベント『こいのぼりの里まつり』と、地元のうどん文化を写真・地図・FAQつきでわかりやすく紹介。旅行計画や学習用にも使える、軽量・高速・アクセシブルなワンファイルサイト。"/>
+  <meta name="author" content=""/>
+  <meta name="theme-color" content="#0ea5e9"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="館林市｜こいのぼり＆うどん ガイド"/>
+  <meta property="og:description" content="館林市のこいのぼりとうどんを1ページで紹介。イベント情報・見どころ・食べ方・アクセス。"/>
+  <meta property="og:image" content="https://example.com/og-image.jpg"/>
+  <meta property="og:url" content="https://<your-username>.github.io/<repo-name>/"/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%230ea5e9' d='M10 50c20-20 60-20 80 0-20 20-60 20-80 0z'/%3E%3Ccircle cx='30' cy='50' r='5' fill='%23000'/%3E%3C/svg%3E"/>
+  <style>
+    :root{
+      --bg: #0b1020;/*暗背景*/
+      --panel: #0f172a;/*カード*/
+      --text: #e5f2ff;/*本文*/
+      --muted: #9fb6cc;/*注釈*/
+      --brand: #0ea5e9;/*アクセント*/
+      --brand-2:#38bdf8;/*グラデーション*/
+      --ok: #10b981; --warn:#f59e0b; --bad:#ef4444;
+      --shadow: 0 10px 30px rgba(2,8,23,.3);
+      --radius: 18px;
+      --maxw: 1100px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f8fbff; --panel:#ffffff; --text:#0b1020; --muted:#476079; }
+      body{ background-image: radial-gradient(1200px 600px at 10% -10%, #dbf0ff 0, transparent 60%), radial-gradient(900px 500px at 90% -20%, #e8f7ff 0, transparent 50%);} 
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", "Meiryo", sans-serif;
+      color:var(--text); background:var(--bg);
+      line-height:1.7; letter-spacing:.02em; 
+    }
+    a{color:var(--brand)}
+    .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
 
+    /* ====== Header / Nav ====== */
+    header{ position:sticky; top:0; z-index:40; backdrop-filter: blur(10px); background: color-mix(in oklab, var(--bg) 70%, transparent); border-bottom: 1px solid color-mix(in oklab, var(--text) 12%, transparent); }
+    .nav{ display:flex; align-items:center; justify-content:space-between; padding: 14px 0; }
+    .brand{ display:flex; gap:10px; align-items:center; font-weight:700; }
+    .brand .logo{ width:28px; height:28px; border-radius:8px; background: radial-gradient(120% 100% at 0% 0%, var(--brand) 0, var(--brand-2) 45%, transparent 46%) ,linear-gradient(135deg, #0ea5e930, #0000); box-shadow: var(--shadow); }
+    .nav ul{ list-style:none; display:flex; gap:18px; margin:0; padding:0; }
+    .nav a{ text-decoration:none; font-weight:600; opacity:.9 }
+    .menu-btn{ display:none; }
+    @media (max-width:800px){
+      .menu-btn{ display:block; border:1px solid color-mix(in oklab, var(--text) 15%, transparent); background:var(--panel); color:var(--text); padding:8px 10px; border-radius:10px; }
+      .nav ul{ position:fixed; inset:60px 16px auto 16px; background:var(--panel); border:1px solid color-mix(in oklab, var(--text) 12%, transparent); border-radius:14px; box-shadow:var(--shadow); padding:14px; display:none; flex-direction:column; }
+      .nav ul.open{ display:flex; }
+    }
 
-/* ====== Header / Nav ====== */
-header{ position:sticky; top:0; z-index:40; backdrop-filter: blur(10px); background: color-mix(in oklab, var(--bg) 70%, transparent); border-bottom: 1px solid color-mix(in oklab, var(--text) 12%, transparent); }
-.nav{ display:flex; align-items:center; justify-content:space-between; padding: 14px 0; }
-.brand{ display:flex; gap:10px; align-items:center; font-weight:700; }
-.brand .logo{ width:28px; height:28px; border-radius:8px; background: radial-gradient(120% 100% at 0% 0%, var(--brand) 0, var(--brand-2) 45%, transparent 46%) ,linear-gradient(135deg, #0ea5e930, #0000); box-shadow: var(--shadow); }
-.nav ul{ list-style:none; display:flex; gap:18px; margin:0; padding:0; }
-.nav a{ text-decoration:none; font-weight:600; opacity:.9 }
-.menu-btn{ display:none; }
-@media (max-width:800px){
-.menu-btn{ display:block; border:1px solid color-mix(in oklab, var(--text) 15%, transparent); background:var(--panel); color:var(--text); padding:8px 10px; border-radius:10px; }
-.nav ul{ position:fixed; inset:60px 16px auto 16px; background:var(--panel); border:1px solid color-mix(in oklab, var(--text) 12%, transparent); border-radius:14px; box-shadow:var(--shadow); padding:14px; display:none; flex-direction:column; }
-.nav ul.open{ display:flex; }
-}
+    /* ====== Hero ====== */
+    .hero{ position:relative; overflow:hidden; }
+    .hero-inner{ display:grid; grid-template-columns: 1.1fr .9fr; gap:30px; align-items:center; padding: 48px 0 28px; }
+    .badge{ display:inline-flex; gap:8px; align-items:center; font-size:12px; padding:6px 10px; border-radius:999px; background: color-mix(in oklab, var(--brand) 20%, transparent); color: color-mix(in oklab, var(--brand) 90%, white 10%); border: 1px solid color-mix(in oklab, var(--brand) 40%, transparent); }
+    h1{ font-size: clamp(28px, 5vw, 44px); line-height:1.15; margin:.4em 0; }
+    .lead{ font-size: clamp(14px, 2.4vw, 18px); opacity:.9 }
+    .hero-card{ background: var(--panel); border:1px solid color-mix(in oklab, var(--text) 10%, transparent); border-radius: var(--radius); box-shadow: var(--shadow); overflow:hidden; }
+    .hero-card img{ width:100%; height:260px; object-fit:cover; display:block; }
+    .hero-card .cap{ padding:12px 14px; font-size:13px; color:var(--muted); }
+    @media (max-width:900px){ .hero-inner{ grid-template-columns:1fr; } }
 
+    /* ====== Sections ====== */
+    section{ padding: 44px 0; }
+    h2{ font-size: clamp(22px, 4vw, 32px); margin: 0 0 18px; }
+    .grid{ display:grid; grid-template-columns: repeat(12, 1fr); gap:18px; }
+    .card{ background: var(--panel); border:1px solid color-mix(in oklab, var(--text) 10%, transparent); border-radius: var(--radius); padding:16px; box-shadow:var(--shadow); }
+    .span-4{ grid-column: span 4; } .span-6{ grid-column: span 6; } .span-8{ grid-column: span 8; } .span-12{ grid-column: span 12; }
+    @media (max-width:900px){ .span-4,.span-6,.span-8{ grid-column: span 12; } }
+    .muted{ color:var(--muted); font-size:14px; }
+    .chips{ display:flex; gap:8px; flex-wrap:wrap; }
+    .chip{ font-size:12px; padding:6px 10px; border-radius:999px; border:1px dashed color-mix(in oklab, var(--text) 22%, transparent); }
 
-/* ====== Hero ====== */
-.hero{ position:relative; overflow:hidden; }
-.hero-inner{ display:grid; grid-template-columns: 1.1fr .9fr; gap:30px; align-items:center; padding: 48px 0 28px; }
-.badge{ display:inline-flex; gap:8px; align-items:center; font-size:12px; padding:6px 10px; border-radius:999px; background: color-mix(in oklab, var(--brand) 20%, transparent); color: color-mix(in oklab, var(--brand) 90%, white 10%); border: 1px solid color-mix(in oklab, var(--brand) 40%, transparent); }
-h1{ font-size: clamp(28px, 5vw, 44px); line-height:1.15; margin:.4em 0; }
-.lead{ font-size: clamp(14px, 2.4vw, 18px); opacity:.9 }
-.hero-card{ background: var(--panel); border:1px solid color-mix(in oklab, var(--text) 10%, transparent); border-radius: var(--radius); box-shadow: var(--shadow); overflow:hidden; }
-.hero-card img{ width:100%; height:260px; object-fit:cover; display:block; }
-.hero-card .cap{ padding:12px 14px; font-size:13px; color:var(--muted); }
-@media (max-width:900px){ .hero-inner{ grid-template-columns:1fr; } }
+    /* Gallery */
+    .gallery{ display:grid; grid-template-columns: repeat(4, 1fr); gap:10px; }
+    .gallery img{ width:100%; height:170px; object-fit:cover; border-radius:12px; cursor:pointer; border:1px solid color-mix(in oklab, var(--text) 12%, transparent); }
+    @media (max-width:900px){ .gallery{ grid-template-columns: repeat(2, 1fr); } }
 
+    /* Table */
+    table{ width:100%; border-collapse: collapse; font-size:14px; }
+    th,td{ padding:10px 12px; border-bottom:1px solid color-mix(in oklab, var(--text) 12%, transparent); }
+    th{ text-align:left; color:var(--muted); font-weight:600; }
 
-/* ====== Sections ====== */
-section{ padding: 44px 0; }
-h2{ font-size: clamp(22px, 4vw, 32px); margin: 0 0 18px; }
-.grid{ display:grid; grid-template-columns: repeat(12, 1fr); gap:18px; }
-.card{ background: var(--panel); border:1px solid color-mix(in oklab, var(--text) 10%, transparent); border-radius: var(--radius); padding:16px; box-shadow:var(--shadow); }
-.span-4{ grid-column: span 4; } .span-6{ grid-column: span 6; } .span-8{ grid-column: span 8; } .span-12{ grid-column: span 12; }
-@media (max-width:900px){ .span-4,.span-6,.span-8{ grid-column: span 12; } }
-.muted{ color:var(--muted); font-size:14px; }
-.chips{ display:flex; gap:8px; flex-wrap:wrap; }
-.chip{ font-size:12px; padding:6px 10px; border-radius:999px; border:1px dashed color-mix(in oklab, var(--text) 22%, transparent); }
+    /* CTA */
+    .cta{ display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
+    .btn{ display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; text-decoration:none; font-weight:700; border:1px solid color-mix(in oklab, var(--brand) 40%, transparent); background: linear-gradient(180deg, color-mix(in oklab, var(--brand) 20%, transparent), transparent); }
+    .btn.secondary{ border-color: color-mix(in oklab, var(--text) 18%, transparent); background: transparent; }
 
+    /* Footer */
+    footer{ padding:40px 0 60px; color:var(--muted); font-size:13px; border-top:1px dashed color-mix(in oklab, var(--text) 12%, transparent); }
 
-/* Gallery */
-.gallery{ display:grid; grid-template-columns: repeat(4, 1fr); gap:10px; }
-.gallery img{ width:100%; height:170px; object-fit:cover; border-radius:12px; cursor:pointer; border:1px solid color-mix(in oklab, var(--text) 12%, transparent); }
-@media (max-width:900px){ .gallery{ grid-template-columns: repeat(2, 1fr); } }
+    /* Back to top */
+    .to-top{ position: fixed; right: 16px; bottom: 16px; display:none; padding:12px 14px; border-radius:999px; background: var(--brand); color:#00213a; border:0; font-weight:700; box-shadow: var(--shadow); cursor:pointer; }
+    .to-top.show{ display:block; }
 
+    /* Dialog (lightbox) */
+    dialog{ border:0; padding:0; border-radius:14px; background:transparent; }
+    dialog::backdrop{ backdrop-filter: blur(4px); background: rgba(2,8,23,.5); }
+    .lightbox{ background: var(--panel); padding:10px; border:1px solid color-mix(in oklab, var(--text) 12%, transparent); border-radius:14px; }
+    .lightbox img{ width: 88vw; max-width: 980px; height: auto; border-radius:10px; display:block; }
+    .lightbox p{ margin:8px 2px 4px; font-size:13px; color:var(--muted); }
 
-/* Table */
-table{ width:100%; border-collapse: collapse; font-size:14px; }
-th,td{ padding:10px 12px; border-bottom:1px solid color-mix(in oklab, var(--text) 12%, transparent); }
-th{ text-align:left; color:var(--muted); font-weight:600; }
+    /* Utility */
+    .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0; }
+  </style>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "館林市｜こいのぼり＆うどん ガイド",
+    "description": "館林市のこいのぼりの里まつり、うどん文化、見どころ、アクセス情報をまとめた非公式ガイド。",
+    "inLanguage": "ja-JP",
+    "mainEntity": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"こいのぼりはいつ見られますか？","acceptedAnswer":{"@type":"Answer","text":"例年、春（4〜5月頃）に市内の各会場で掲揚されます。最新の開催時期は館林市の公式発表を確認してください。"}},
+        {"@type":"Question","name":"館林のうどんの特徴は？","acceptedAnswer":{"@type":"Answer","text":"コシのある太めの麺で、冷・温どちらでも楽しめます。店舗ごとに小麦の配合や茹で方に違いがあり、食べ比べが人気です。"}}
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="wrap nav" aria-label="トップナビ">
+      <div class="brand"><span class="logo" aria-hidden="true"></span><span>館林｜こいのぼり＆うどん</span></div>
+      <button class="menu-btn" aria-expanded="false" aria-controls="navlist">メニュー</button>
+      <ul id="navlist">
+        <li><a href="#intro">概要</a></li>
+        <li><a href="#koinobori">こいのぼり</a></li>
+        <li><a href="#udon">うどん</a></li>
+        <li><a href="#spots">スポット</a></li>
+        <li><a href="#access">アクセス</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="intro">
+      <div class="wrap hero-inner">
+        <div>
+          <span class="badge" title="このページの目的">地域ガイド・学習素材</span>
+          <h1>館林市の<strong>こいのぼり</strong>と<strong>うどん</strong>を、1ページで。</h1>
+          <p class="lead">群馬県館林市は、春に空を彩る「こいのぼりの里」と、小麦文化が息づくうどんで知られています。本ページは、見どころ・食べ方・アクセスを<strong>写真・地図・FAQ</strong>でまとめた非公式ガイドです。GitHub Pages でそのまま公開できるよう、<strong>HTML + CSS + JS</strong>を一つのファイルに統合しています。</p>
+          <div class="cta" role="group" aria-label="クイックリンク">
+            <a class="btn" href="#koinobori">こいのぼりを見る</a>
+            <a class="btn secondary" href="#udon">うどんを知る</a>
+          </div>
+          <p class="muted" style="margin-top:10px">※ 情報は参考用。最新の開催日程・営業時間は必ず公式情報をご確認ください。</p>
+        </div>
+        <aside class="hero-card" aria-label="イメージ">
+          <img src="https://images.unsplash.com/photo-1558185348-83e7b32a7254?q=80&w=1600&auto=format&fit=crop" alt="青空に泳ぐこいのぼり"/>
+          <div class="cap">写真はイメージです（著作権に配慮してフリー素材を使用）。</div>
+        </aside>
+      </div>
+    </section>
 
-/* CTA */
-.cta{ display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
-.btn{ display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; text-decoration:none; font-weight:700; border:1px solid color-mix(in oklab, var(--brand) 40%, transparent); background: linear-gradient(180deg, color-mix(in oklab, var(--brand) 20%, transparent), transparent); }
-.btn.secondary{ border-color: color-mix(in oklab, var(--text) 18%, transparent); background: transparent; }
+    <!-- ===== Koinobori ===== -->
+    <section id="koinobori">
+      <div class="wrap">
+        <h2>こいのぼりの里（春の風物詩）</h2>
+        <div class="grid">
+          <article class="card span-8">
+            <h3>見どころ</h3>
+            <ul>
+              <li><strong>大規模掲揚</strong>：市内の水辺や公園に多数のこいのぼりが掲げられ、風に泳ぐ姿は圧巻。</li>
+              <li><strong>写真スポット</strong>：午前中は逆光を避けやすく、風が出やすい時間帯は午後。望遠と広角の両方が楽しい。</li>
+              <li><strong>夜景演出</strong>：一部会場ではライトアップ実施の年もあり、夕暮れ〜日没後が狙い目。</li>
+            </ul>
+            <div class="chips" aria-label="撮影・観覧のコツ">
+              <span class="chip">三脚NGの場所に注意</span>
+              <span class="chip">強風日は安全第一</span>
+              <span class="chip">川沿いは防寒対策</span>
+              <span class="chip">駐車場・混雑に余裕</span>
+            </div>
+          </article>
 
+          <aside class="card span-4">
+            <h3>基本情報（参考）</h3>
+            <table aria-describedby="koi-note">
+              <tr><th>開催時期</th><td>例年 4〜5 月ごろ</td></tr>
+              <tr><th>主な会場</th><td>市内公園・水辺など（年により変動）</td></tr>
+              <tr><th>費用</th><td>観覧無料（一部有料設備あり）</td></tr>
+            </table>
+            <p id="koi-note" class="muted">※ 正確な日程・会場は公式サイトでご確認ください。</p>
+          </aside>
+        </div>
 
-/* Footer */
-footer{ padding:40px 0 60px; color:var(--muted); font-size:13px; border-top:1px dashed color-mix(in oklab, var(--text) 12%, transparent); }
+        <div class="card" style="margin-top:16px">
+          <h3>ギャラリー</h3>
+          <div class="gallery" id="gallery">
+            <!-- 画像URLを自前の /images 配下に差し替え推奨 -->
+            <img src="https://images.unsplash.com/photo-1506785480439-58a4b1a2c9a3?q=80&w=1200&auto=format&fit=crop" alt="こいのぼりが川辺を泳ぐ様子" data-caption="川辺のこいのぼり"/>
+            <img src="https://images.unsplash.com/photo-1529927051924-57c17836b6d0?q=80&w=1200&auto=format&fit=crop" alt="色とりどりのこいのぼり" data-caption="色とりどりの吹き流し"/>
+            <img src="https://images.unsplash.com/photo-1558507334-57300f59f0ef?q=80&w=1200&auto=format&fit=crop" alt="空を背景にしたこいのぼり群" data-caption="青空とこいのぼり"/>
+            <img src="https://images.unsplash.com/photo-1499083773823-5f23dff40e76?q=80&w=1200&auto=format&fit=crop" alt="夕景のこいのぼり" data-caption="夕景シルエット"/>
+          </div>
+          <dialog id="dlg"><div class="lightbox"><img alt="拡大画像" id="dlgimg"/><p id="dlgcap"></p></div></dialog>
+        </div>
+      </div>
+    </section>
 
+    <!-- ===== Udon ===== -->
+    <section id="udon">
+      <div class="wrap">
+        <h2>館林のうどん（小麦文化）</h2>
+        <div class="grid">
+          <article class="card span-6">
+            <h3>特徴</h3>
+            <p>地元産小麦や群馬県産小麦を活かした<strong>コシのある麺</strong>が特徴。冷たいつけ麺で小麦の香りを、温かいかけでモチモチ感を楽しめます。店舗毎に麺幅・茹で加減・出汁が異なるため、<em>食べ比べ</em>が人気です。</p>
+            <ul>
+              <li>麺：太め〜平打ちまでバリエーションあり</li>
+              <li>出汁：かつお・昆布・煮干しベース（店ごとに調合）</li>
+              <li>提供：茹でたて重視、提供まで時間がかかることも</li>
+            </ul>
+          </article>
+          <article class="card span-6">
+            <h3>おすすめの楽しみ方</h3>
+            <ol>
+              <li>最初の一口は<strong>何も付けず</strong>に小麦の風味を確認。</li>
+              <li>薬味（ネギ・生姜・胡麻）を段階的に追加。</li>
+              <li>天ぷら・舞茸・季節の野菜を合わせて食感を加える。</li>
+            </ol>
+          </article>
+        </div>
 
-/* Back to top */
-.to-top{ position: fixed; right: 16px; bottom: 16px; display:none; padding:12px 14px; border-radius:999px; background: var(--brand); color:#00213a; border:0; font-weight:700; box-shadow: var(--shadow); cursor:pointer; }
+        <div class="card" style="margin-top:16px">
+          <h3>うどん基礎知識（クイック表）</h3>
+          <table>
+            <tr><th>麺のタイプ</th><th>向く食べ方</th><th>メモ</th></tr>
+            <tr><td>太麺・強コシ</td><td>冷やし・ざる</td><td>小麦の香りを感じやすい</td></tr>
+            <tr><td>平打ち</td><td>釜揚げ・かけ</td><td>つるみと絡みのバランス良い</td></tr>
+            <tr><td>極太（幅広）</td><td>つけ汁</td><td>食べ応え抜群・提供に時間</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Spots ===== -->
+    <section id="spots">
+      <div class="wrap">
+        <h2>主なスポット（例）</h2>
+        <p class="muted">※ 実店舗名・会場はダミーです。公開前に実データへ差し替えてください。</p>
+        <div class="chips" style="margin-bottom:10px">
+          <button class="chip" data-filter="all">すべて</button>
+          <button class="chip" data-filter="koi">こいのぼり</button>
+          <button class="chip" data-filter="udon">うどん</button>
+          <button class="chip" data-filter="park">公園</button>
+        </div>
+        <div class="grid" id="spotlist" aria-live="polite">
+          <!-- Card Template Examples -->
+          <article class="card span-4" data-tags="koi park">
+            <h3>○○水辺公園</h3>
+            <p class="muted">春にこいのぼり掲揚／水辺の散策路が人気。</p>
+            <a class="btn" href="#access">行き方</a>
+          </article>
+          <article class="card span-4" data-tags="udon">
+            <h3>手打ちうどん △△</h3>
+            <p class="muted">強いコシの太麺。昼どき混雑あり。</p>
+            <a class="btn" href="#access">行き方</a>
+          </article>
+          <article class="card span-4" data-tags="udon">
+            <h3>うどん食堂 □□</h3>
+            <p class="muted">平打ち麺とやさしい出汁。</p>
+            <a class="btn" href="#access">行き方</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Access ===== -->
+    <section id="access">
+      <div class="wrap">
+        <h2>アクセス</h2>
+        <div class="grid">
+          <div class="card span-6">
+            <h3>行き方（参考）</h3>
+            <ul>
+              <li><strong>電車</strong>：東武線の最寄駅からバス・徒歩。</li>
+              <li><strong>車</strong>：主要ICから市内へ。イベント時は臨時駐車場の案内に従う。</li>
+              <li><strong>周遊</strong>：離れた会場間の移動は自転車も便利。</li>
+            </ul>
+            <p class="muted">※ 交通・運行状況は当日ご確認ください。</p>
+          </div>
+          <div class="card span-6">
+            <h3>地図（埋め込み例）</h3>
+            <p class="muted">以下の iframe の src を、目的地の Google マップ共有リンクに差し替えてください。</p>
+            <div style="aspect-ratio:16/9; border:1px solid color-mix(in oklab, var(--text) 12%, transparent); border-radius:12px; overflow:hidden">
+              <iframe title="地図" width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.953415!2d139.767125!3d35.681236!"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq">
+      <div class="wrap">
+        <h2>FAQ</h2>
+        <details class="card"><summary><strong>Q.</strong> こいのぼりはいつ頃が見ごろ？</summary><div style="padding-top:8px">A. 風が安定して吹く春の午後は写真映えしやすいです。開催時期は年で異なるため、最新の公式情報をご確認ください。</div></details>
+        <details class="card"><summary><strong>Q.</strong> うどん店のピークは？</summary><div style="padding-top:8px">A. 12:00〜13:30 は混雑しやすいです。茹でたて提供のため時間に余裕を。</div></details>
+        <details class="card"><summary><strong>Q.</strong> 子連れでも楽しめる？</summary><div style="padding-top:8px">A. 風の強い日や水辺では安全第一で。会場のルール（立入禁止・三脚可否）を確認しましょう。</div></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© <span id="year"></span> 館林｜こいのぼり＆うどん（非公式ファンページ）</p>
+      <p class="muted">本ページは学習・ファン活動を目的とした非公式サイトです。最新情報は自治体・主催者・各店舗の公式発表をご確認ください。写真はクレジット表記のないフリー素材を利用しています。掲載内容に問題がある場合は <a href="mailto:example@example.com">連絡先</a> まで。</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="ページ上部へ戻る">▲</button>
+
+  <script>
+    // ===== Mobile menu toggle =====
+    const btn = document.querySelector('.menu-btn');
+    const nav = document.getElementById('navlist');
+    btn?.addEventListener('click', ()=>{
+      const opened = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', opened ? 'true':'false');
+    });
+
+    // ===== Smooth scroll =====
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth'}); nav?.classList.remove('open'); }
+      })
+    })
+
+    // ===== Back to top =====
+    const toTop = document.getElementById('toTop');
+    const onScroll = ()=>{
+      if (window.scrollY > 600) toTop.classList.add('show'); else toTop.classList.remove('show');
+    };
+    window.addEventListener('scroll', onScroll, {passive:true});
+    toTop.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+
+    // ===== Gallery lightbox =====
+    const dlg = document.getElementById('dlg');
+    const dlgImg = document.getElementById('dlgimg');
+    const dlgCap = document.getElementById('dlgcap');
+    document.getElementById('gallery')?.addEventListener('click', (e)=>{
+      const t = e.target; if(!(t instanceof HTMLImageElement)) return;
+      dlgImg.src = t.src; dlgImg.alt = t.alt; dlgCap.textContent = t.dataset.caption || '';
+      dlg.showModal();
+    });
+    dlg?.addEventListener('click', (e)=>{ if(e.target === dlg) dlg.close(); });
+
+    // ===== Spot filter =====
+    const list = document.getElementById('spotlist');
+    document.querySelectorAll('[data-filter]').forEach(b=>{
+      b.addEventListener('click', ()=>{
+        const f = b.getAttribute('data-filter');
+        list.querySelectorAll('article').forEach(card=>{
+          const tags = card.getAttribute('data-tags')||'';
+          card.style.display = (f==='all' || tags.includes(f)) ? '' : 'none';
+        })
+      })
+    })
+
+    // ===== Year =====
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
